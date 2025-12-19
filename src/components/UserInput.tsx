@@ -18,7 +18,7 @@ export default function UserInput({
   return (
     <div id="user-input">
       <div className="input-group">
-        <div>
+        <p>
           <label htmlFor="initial-investment">Initial investment</label>
           <input
             type="number"
@@ -28,8 +28,8 @@ export default function UserInput({
             value={data.initialInvestment}
             onChange={(event) => onInvestmentChange(event, "Initial")}
           />
-        </div>
-        <div>
+        </p>
+        <p>
           <label htmlFor="annual-investment">Annual investment</label>
           <input
             type="number"
@@ -39,10 +39,10 @@ export default function UserInput({
             value={data.annualInvestment}
             onChange={(event) => onInvestmentChange(event, "Annual")}
           />
-        </div>
+        </p>
       </div>
       <div className="input-group">
-        <div>
+        <p>
           <label htmlFor="expected-return">Expected return</label>
           <input
             type="number"
@@ -52,8 +52,8 @@ export default function UserInput({
             value={data.expectedReturn}
             onChange={(event) => onInvestmentChange(event, "Return")}
           />
-        </div>
-        <div>
+        </p>
+        <p>
           <label htmlFor="duration">Duration</label>
           <input
             type="number"
@@ -63,7 +63,7 @@ export default function UserInput({
             value={data.duration}
             onChange={(event) => onInvestmentChange(event, "Duration")}
           />
-        </div>
+        </p>
       </div>
     </div>
   );
