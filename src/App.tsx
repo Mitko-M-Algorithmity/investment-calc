@@ -46,13 +46,19 @@ function App() {
     setInvestmentData(updatedInvestment);
   }
 
+  let result = <p>Please enter valid data!</p>;
+
+  if (investmentData.duration >= 1) {
+    result = <TableResult data={investmentData} />;
+  }
+
   return (
     <>
       <UserInput
         onInvestmentChange={handleInvestmentChange}
         data={investmentData}
       />
-      <TableResult data={investmentData} />
+      {result}
     </>
   );
 }
