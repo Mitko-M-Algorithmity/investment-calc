@@ -12,11 +12,9 @@ const INITIAL_INVESTMENT_DATA: InvestmentData = {
 };
 
 function App() {
-  console.log("App rendered");
   const [investmentData, setInvestmentData] = useState({
     ...INITIAL_INVESTMENT_DATA,
   });
-  console.log(investmentData);
 
   function handleInvestmentChange(
     event: ChangeEvent<HTMLInputElement>,
