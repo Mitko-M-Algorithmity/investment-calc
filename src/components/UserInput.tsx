@@ -25,7 +25,7 @@ export default function UserInput({
             key="initial-investment"
             required
             id="initial-investment"
-            value={data.initialInvestment}
+            defaultValue={data.initialInvestment}
             onChange={(event) => onInvestmentChange(event, "Initial")}
           />
         </p>
@@ -36,7 +36,7 @@ export default function UserInput({
             key="annual-investment"
             required
             id="annual-investment"
-            value={data.annualInvestment}
+            defaultValue={data.annualInvestment}
             onChange={(event) => onInvestmentChange(event, "Annual")}
           />
         </p>
@@ -49,7 +49,7 @@ export default function UserInput({
             required
             id="expected-return"
             key="expected-return"
-            value={data.expectedReturn}
+            defaultValue={data.expectedReturn}
             onChange={(event) => onInvestmentChange(event, "Return")}
           />
         </p>
@@ -60,7 +60,7 @@ export default function UserInput({
             required
             key="duration"
             id="duration"
-            value={data.duration}
+            defaultValue={data.duration}
             onChange={(event) => onInvestmentChange(event, "Duration")}
           />
         </p>
